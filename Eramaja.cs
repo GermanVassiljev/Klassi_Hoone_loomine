@@ -9,6 +9,7 @@ namespace Klassi_Hoone_loomine
     public class EraMaja : Hoone
     {
         public string Kodu;
+        public int pindala;
         public Uks Color;
         public EraMaja(int pindala = 50) : base(pindala)
         {
@@ -35,6 +36,10 @@ namespace Klassi_Hoone_loomine
                 }
                 return Kodu;
             }
+        }
+        public override void NaitaInfo()
+        {
+            Console.WriteLine($"{Suurus_}");
         }
 
     }

@@ -20,7 +20,9 @@ namespace Klassi_Hoone_loomine
         public void NaitaInfo()
         {
             Console.WriteLine($"Mina olen inimene, minu nimi on {nimi}");
+            Console.WriteLine("Hoone info:");
             hoone.NaitaInfo();
+            Console.WriteLine("Ukse info:");
             hoone.GetUks().NaitaInfo();
         }
     }
